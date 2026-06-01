@@ -1,0 +1,434 @@
+:root {
+    --black: #0a0a0a;
+    --white: #f8f6f1;
+    --cream: #f0ece3;
+    --accent: #c8f135;
+    --accent-dark: #a8d020;
+    --gray: #6b6b6b;
+    --gray-light: #e8e4dc;
+    --font-display: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--white);
+    color: var(--black);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+    height: 72px;
+    background: rgba(248, 246, 241, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.nav-logo {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.nav-logo span {
+    color: var(--accent-dark);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-links a {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--black);
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.2s;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.nav-cta {
+    background: var(--black) !important;
+    color: var(--white) !important;
+    opacity: 1 !important;
+    padding: 10px 22px;
+    border-radius: 100px;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    transition: background 0.2s !important;
+}
+
+.nav-cta:hover {
+    background: #333 !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 72px;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5em, 6vw, 3.5em);
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--black);
+}
+
+.header h1 span {
+    color: var(--accent-dark);
+}
+
+.header p {
+    font-size: 1.1em;
+    color: var(--gray);
+}
+
+/* Plans Section */
+.plans-section {
+    margin-bottom: 80px;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.plan-card {
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card:hover {
+    border-color: var(--accent-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(200, 241, 53, 0.1);
+}
+
+.plan-card.highlighted {
+    border-color: var(--accent-dark);
+    background: var(--accent);
+}
+
+.plan-card.highlighted::before {
+    content: "★ MAIS ESCOLHIDO";
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-dark);
+    color: var(--white);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.plan-icon {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--gray-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.plan-card.highlighted .plan-icon {
+    border-color: var(--accent-dark);
+    background: rgba(168, 208, 32, 0.1);
+}
+
+.plan-name {
+    font-family: var(--font-display);
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.plan-price {
+    font-size: 1.5em;
+    color: var(--accent-dark);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.plan-description {
+    font-size: 0.9em;
+    color: var(--gray);
+    margin-bottom: 25px;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+.plan-features li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--gray-light);
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+    color: var(--black);
+}
+
+.plan-features li:before {
+    content: "✓";
+    color: var(--accent-dark);
+    font-weight: bold;
+    margin-right: 12px;
+    font-size: 1.2em;
+}
+
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.plan-button {
+    background: transparent;
+    border: 2px solid var(--accent-dark);
+    color: var(--accent-dark);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: var(--font-body);
+}
+
+.plan-card.highlighted .plan-button {
+    background: var(--accent-dark);
+    color: var(--white);
+    border-color: var(--accent-dark);
+}
+
+.plan-button:hover {
+    background: var(--accent-dark);
+    color: var(--white);
+    border-color: var(--accent-dark);
+}
+
+/* Comparison Section */
+.comparison-section {
+    background: var(--cream);
+    border: 1px solid var(--gray-light);
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.comparison-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.comparison-header h2 {
+    font-family: var(--font-display);
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--black);
+}
+
+.comparison-badge {
+    background: var(--accent);
+    border: 1px solid var(--accent-dark);
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.85em;
+    color: var(--black);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comparison-badge::before {
+    content: "⚖";
+    font-size: 1.1em;
+}
+
+.comparison-subtitle {
+    color: var(--gray);
+    margin-bottom: 30px;
+    font-size: 0.95em;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.comparison-table th {
+    background: var(--white);
+    font-weight: 600;
+    color: var(--accent-dark);
+}
+
+.comparison-table tr:first-child th:first-child {
+    text-align: left;
+}
+
+.comparison-table td:first-child {
+    text-align: left;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.plan-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.plan-label-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.timewise-icon {
+    background: var(--accent);
+    color: var(--black);
+}
+
+.quizlet-icon {
+    background: rgba(100, 88, 255, 0.2);
+    color: #6458ff;
+}
+
+.knowt-icon {
+    background: rgba(255, 150, 0, 0.2);
+    color: #ff9600;
+}
+
+.price-cell {
+    color: var(--accent-dark);
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+.comparison-note {
+    margin-top: 20px;
+    font-size: 0.85em;
+    color: var(--gray);
+    border-top: 1px solid var(--gray-light);
+    padding-top: 15px;
+}
+
+/* Footer note */
+.footer-note {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--gray);
+    font-size: 0.9em;
+}
+
+.cancel-note {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--gray);
+    font-size: 0.95em;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .plans-container {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-section {
+        overflow-x: auto;
+    }
+
+    .comparison-table {
+        font-size: 0.9em;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px;
+    }
+}

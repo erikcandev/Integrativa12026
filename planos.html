@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos - TimeWise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="planos.css">
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="nav-logo">Time<span>Wise</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#materias">Matérias</a></li>
+            <li><a href="planos.html" style="opacity: 1; color: var(--accent-dark);">Planos</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="dashboard.html" class="nav-cta">Começar Agora →</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Escolha o plano ideal<br>para <span>sua jornada.</span></h1>
+        </div>
+
+        <!-- Plans Section -->
+        <div class="plans-section">
+            <div class="plans-container">
+                <!-- Free Plan -->
+                <div class="plan-card free">
+                    <div class="plan-icon">🌱</div>
+                    <h3 class="plan-name">Free</h3>
+                    <div class="plan-price">R$ 0</div>
+                    <p class="plan-description">Para começar</p>
+                    <ul class="plan-features">
+                        <li>Dashboard básico (apenas horários)</li>
+                        <li>5 resumos por mês</li>
+                        <li>5 quizzes por mês</li>
+                    </ul>
+                    <button class="plan-button">Começar Grátis</button>
+                </div>
+
+                <!-- Plus Plan -->
+                <div class="plan-card plus highlighted">
+                    <div class="plan-icon">📈</div>
+                    <h3 class="plan-name">Plus</h3>
+                    <div class="plan-price">R$ 14,90<span style="font-size: 0.6em; color: var(--gray);">/mês</span></div>
+                    <p class="plan-description">Para quem quer mais</p>
+                    <ul class="plan-features">
+                        <li>Dashboard completo (gráficos e horas)</li>
+                        <li>Resumos ilimitados</li>
+                        <li>10 quizzes por mês</li>
+                    </ul>
+                    <button class="plan-button">Escolher Plus</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="plan-card premium">
+                    <div class="plan-icon">👑</div>
+                    <h3 class="plan-name">Premium</h3>
+                    <div class="plan-price">R$ 29,90<span style="font-size: 0.6em; color: var(--gray);">/mês</span></div>
+                    <p class="plan-description">Para máxima produtividade</p>
+                    <ul class="plan-features">
+                        <li>Dashboard completo + excelência</li>
+                        <li>Resumos limitados + áudio</li>
+                        <li>Quizzes ilimitados</li>
+                    </ul>
+                    <button class="plan-button">Escolher Premium</button>
+                </div>
+            </div>
+
+            <div class="cancel-note">
+                ✓ Cancele quando quiser. Sem fidelidade.
+            </div>
+        </div>
+
+        <!-- Comparison Section -->
+        <div class="comparison-section">
+            <div class="comparison-header">
+                <h2>Comparativo de Preços</h2>
+                <div class="comparison-badge">Comparativo de Preços</div>
+            </div>
+            <p class="comparison-subtitle">Compare os planos e veja por que o TimeWise é a melhor escolha.</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Planos</th>
+                        <th>
+                            <div class="plan-label">
+                                <div class="plan-label-icon timewise-icon">⏱</div>
+                                TimeWise
+                            </div>
+                        </th>
+                        <th>
+                            <div class="plan-label">
+                                <div class="plan-label-icon quizlet-icon">Q</div>
+                                Quizlet
+                            </div>
+                        </th>
+                        <th>
+                            <div class="plan-label">
+                                <div class="plan-label-icon knowt-icon">K</div>
+                                Knowt
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Plano Gratuito</td>
+                        <td class="price-cell">R$ 0</td>
+                        <td class="price-cell">R$ 0</td>
+                        <td class="price-cell">R$ 0</td>
+                    </tr>
+                    <tr>
+                        <td>Plano Básico (equivalente)</td>
+                        <td class="price-cell">R$ 14,90/mês</td>
+                        <td class="price-cell">R$ 19,99/mês<br><small style="color: var(--gray);">(Plus)</small></td>
+                        <td class="price-cell">R$ 19,99/mês<br><small style="color: var(--gray);">(Knowt Plus)</small></td>
+                    </tr>
+                    <tr>
+                        <td>Plano Avançado (equivalente)</td>
+                        <td class="price-cell">R$ 29,90/mês</td>
+                        <td class="price-cell">R$ 39,99/mês<br><small style="color: var(--gray);">(Plus Anual)</small></td>
+                        <td class="price-cell">R$ 39,99/mês<br><small style="color: var(--gray);">(Knowt Pro)</small></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="comparison-note">
+                ⓘ Preços podem variar. Consulte os sites oficiais para mais informações.
+            </div>
+        </div>
+
+        <div class="footer-note">
+            Escolha o plano perfeito para suas necessidades e comece sua jornada com TimeWise hoje mesmo!
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - TimeWise Estudos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="nav-logo">Time<span>Wise</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#materias">Matérias</a></li>
+            <li><a href="planos.html">Planos</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#faq" style="color: #00d084;">FAQ</a></li>
+            <li><a href="dashboard.html" class="nav-cta">Começar Agora →</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="faq-header">
+            <h1>Perguntas <span>Frequentes</span></h1>
+            <p>Tire suas dúvidas sobre a TimeWise e como podemos ajudar sua jornada acadêmica</p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="category-tabs">
+            <button class="category-tab active" onclick="filterCategory('geral')">Geral</button>
+            <button class="category-tab" onclick="filterCategory('funcionalidades')">Funcionalidades</button>
+            <button class="category-tab" onclick="filterCategory('planos')">Planos & Preços</button>
+            <button class="category-tab" onclick="filterCategory('tecnico')">Técnico</button>
+        </div>
+
+        <!-- FAQ Content -->
+        
+        <!-- Geral -->
+        <div class="category-section active" id="geral">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">O que é TimeWise?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            TimeWise é uma plataforma inteligente de estudos desenvolvida especialmente para estudantes de pedagogia. Ela usa Inteligência Artificial para ajudar você a organizar sua rotina acadêmica, gerenciar seu tempo de forma eficiente e potencializar seus estudos com resumos automáticos, questões personalizadas e um dashboard completo de acompanhamento.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Para quem é TimeWise?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            TimeWise foi desenvolvida para estudantes de Pedagogia que enfrentam desafios com:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li>Gestão de tempo e rotina sobrecarregada</li>
+                                <li>Organização de múltiplas disciplinas e materiais</li>
+                                <li>Falta de foco e produtividade nos estudos</li>
+                                <li>Dificuldade em reter e consolidar conhecimento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Qual é a diferença entre TimeWise e outras plataformas?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            TimeWise é focada em estudantes de pedagogia com:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li><strong>Organização da rotina acadêmica</strong> - agendamento integrado de aulas, prazos e estudos</li>
+                                <li><strong>Planejamento baseado na rotina do aluno</strong> - o que outras plataformas não oferecem</li>
+                                <li><strong>Foco em Pedagogia</strong> - conteúdo e funcionalidades pensadas para o curso</li>
+                                <li><strong>Dashboard acadêmico completo</strong> - visualize seu desempenho em tempo real</li>
+                            </ul>
+                            Veja a <a href="index.html#diferenciais">comparação completa</a> com Quizlet e Knowt.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como TimeWise resolve meus problemas de tempo?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            TimeWise entende que o problema não é falta de tempo, mas falta de organização. A plataforma:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li><strong>Organiza</strong> - agrupa suas aulas, prazos e materiais em um só lugar</li>
+                                <li><strong>Prioriza</strong> - mostra o que é importante estudar primeiro</li>
+                                <li><strong>Otimiza</strong> - reduz tempo gasto em organização, deixando mais tempo para estudar</li>
+                                <li><strong>Acompanha</strong> - você vê seu progresso e evita atrasos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como começar a usar TimeWise?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            É muito simples:
+                            <ol style="margin-top: 10px; margin-left: 20px;">
+                                <li>Clique em "Começar Agora" no topo da página</li>
+                                <li>Crie sua conta gratuitamente</li>
+                                <li>Adicione suas disciplinas e horários</li>
+                                <li>Comece a usar o dashboard e gerar resumos/questões</li>
+                            </ol>
+                            Você pode começar com o plano <a href="planos.html">Free</a> sem precisar de cartão de crédito.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Funcionalidades -->
+        <div class="category-section" id="funcionalidades">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como funciona a agenda inteligente?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            A agenda inteligente do TimeWise:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li><strong>Integra</strong> seus horários de aulas, prazos de trabalhos e sessões de estudo</li>
+                                <li><strong>Visualiza</strong> sua semana completa em um calendário interativo</li>
+                                <li><strong>Sugere</strong> os melhores horários para estudar com base em sua disponibilidade</li>
+                                <li><strong>Notifica</strong> você sobre aulas, prazos e estudos planejados</li>
+                            </ul>
+                            Tudo sincronizado e acessível de qualquer dispositivo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como funcionam os resumos automáticos com IA?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            TimeWise gera resumos de forma inteligente:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li>Envie textos, PDFs ou anotações para a plataforma</li>
+                                <li>A IA analisa o conteúdo e extrai os pontos principais</li>
+                                <li>Gera resumos concisos e bem estruturados</li>
+                                <li>Você pode personalizar o nível de detalhamento</li>
+                                <li>Acesso ilimitado em planos Plus e Premium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Posso usar TimeWise offline?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            TimeWise é uma plataforma web que requer conexão com a internet. No entanto:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li>Você pode baixar seus resumos e questões em PDF</li>
+                                <li>Pode visualizar seu dashboard mesmo com conexão lenta</li>
+                                <li>Estamos desenvolvendo um aplicativo mobile para melhor acessibilidade</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como funciona o dashboard acadêmico?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            O dashboard é seu central de controle com:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li><strong>Visão geral</strong> - horas estudadas, resumos criados, questões respondidas</li>
+                                <li><strong>Gráficos de desempenho</strong> - acompanhe sua evolução por disciplina</li>
+                                <li><strong>Metas e progresso</strong> - defina objetivos e visualize o andamento</li>
+                                <li><strong>Histórico</strong> - revisão de tudo que você estudou</li>
+                            </ul>
+                            Atualiza em tempo real conforme você usa a plataforma.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como as questões com IA são geradas?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            TimeWise cria questões personalizadas:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li>Com base no conteúdo que você estuda</li>
+                                <li>Em diferentes formatos: múltipla escolha, verdadeiro/falso, discursivas</li>
+                                <li>Ajustadas ao seu nível de conhecimento</li>
+                                <li>Com feedback automático e explicações</li>
+                                <li>5 quizzes por mês no plano Free, ilimitados no Premium</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Planos & Preços -->
+        <div class="category-section" id="planos">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Qual plano devo escolher?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Depende de suas necessidades:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li><strong>Free</strong> - Perfeito para começar. Teste as funcionalidades básicas sem custo</li>
+                                <li><strong>Plus (R$ 14,90/mês)</strong> - Para quem quer resumos ilimitados e dashboard completo</li>
+                                <li><strong>Premium (R$ 29,90/mês)</strong> - Máxima produtividade com tudo ilimitado + áudio</li>
+                            </ul>
+                            <a href="planos.html">Ver comparação completa</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Posso cancelar minha inscrição?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Sim! TimeWise não tem fidelidade ou compromisso:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li>Você pode cancelar quando quiser, sem multas ou taxas</li>
+                                <li>Basta ir em Configurações → Minha Conta → Cancelar Plano</li>
+                                <li>Não cobramos automaticamente; você recebe um aviso antes</li>
+                                <li>Seus dados são mantidos por 30 dias após cancelamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Vocês oferecem desconto para planos anuais?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Sim! Oferecemos desconto especial para inscrições anuais:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li><strong>Plus Anual:</strong> R$ 149,90/ano (economia de R$ 28,80)</li>
+                                <li><strong>Premium Anual:</strong> R$ 299,90/ano (economia de R$ 58,90)</li>
+                                <li>Você pode alternar entre mensalidade e anuidade quando quiser</li>
+                            </ul>
+                            <a href="planos.html">Escolha seu plano</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Há promoções ou descontos especiais?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Fique atento a nossas promoções:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li>Desconto para período de teste estendido</li>
+                                <li>Promoções em início de semestre e época de vestibular</li>
+                                <li>Descontos para grupos de universidades</li>
+                                <li>Inscreva-se na nossa newsletter para não perder as ofertas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como faço para mudar de plano?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Mudar de plano é fácil:
+                            <ol style="margin-top: 10px; margin-left: 20px;">
+                                <li>Acesse seu Dashboard</li>
+                                <li>Vá em Configurações → Meu Plano</li>
+                                <li>Clique em "Alterar Plano"</li>
+                                <li>Escolha o novo plano desejado</li>
+                                <li>A mudança é imediata e proporcional</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Técnico -->
+        <div class="category-section" id="tecnico">
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Meus dados são seguros no TimeWise?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Sim, segurança é nossa prioridade:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li><strong>Criptografia SSL</strong> - todos os dados são criptografados em trânsito</li>
+                                <li><strong>Backup automático</strong> - seus dados são salvos diariamente</li>
+                                <li><strong>Autenticação segura</strong> - senhas são criptografadas com hash bcrypt</li>
+                                <li><strong>Conformidade LGPD</strong> - respeitamos sua privacidade</li>
+                                <li><strong>Servidores confiáveis</strong> - hospedagem em data centers certificados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como faço para recuperar minha senha?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Esqueceu sua senha? Sem problema:
+                            <ol style="margin-top: 10px; margin-left: 20px;">
+                                <li>Na página de login, clique em "Esqueci minha senha"</li>
+                                <li>Digite o e-mail associado à sua conta</li>
+                                <li>Você receberá um link de recuperação por e-mail</li>
+                                <li>Clique no link e defina uma nova senha</li>
+                                <li>Você terá 1 hora para usar o link</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Posso usar TimeWise em outros idiomas?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            No momento, TimeWise está disponível apenas em Português Brasileiro, otimizado para a realidade acadêmica do Brasil. Estamos estudando a possibilidade de expansão para outros idiomas no futuro.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Posso acessar TimeWise em múltiplos dispositivos?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Sim! Sua conta é acessível de qualquer dispositivo:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li>Desktop (Windows, Mac, Linux)</li>
+                                <li>Tablet (iPad, Android)</li>
+                                <li>Smartphone (iPhone, Android)</li>
+                                <li>Seus dados sincronizam automaticamente entre dispositivos</li>
+                                <li>Você pode fazer login em até 5 dispositivos simultaneamente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Como faço para entrar em contato com suporte?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Precisando de ajuda? Entre em contato:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li><strong>E-mail:</strong> suporte@timewisestudos.com</li>
+                                <li><strong>Chat ao vivo:</strong> Disponível no seu Dashboard</li>
+                                <li><strong>Redes sociais:</strong> @TimeWiseStudos</li>
+                                <li><strong>Tempo de resposta:</strong> até 24 horas úteis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span class="faq-question-text">Posso exportar meus dados?</span>
+                        <span class="faq-toggle">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-text">
+                            Sim, seus dados são seus:
+                            <ul style="margin-top: 10px; margin-left: 20px;">
+                                <li>Você pode baixar todos os seus resumos em PDF</li>
+                                <li>Exportar histórico de estudos em Excel</li>
+                                <li>Gerar relatório completo de desempenho</li>
+                                <li>Solicitar cópia de todos os seus dados em formato JSON</li>
+                                <li>Vá em Configurações → Dados → Exportar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>Ainda tem dúvidas?</h2>
+            <p>Entre em contato conosco ou comece grátis e descubra como TimeWise pode transformar seus estudos</p>
+            <a href="dashboard.html" class="cta-button">Começar Agora - Plano Free</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleFaq(element) {
+            const item = element.parentElement;
+            item.classList.toggle('active');
+        }
+
+        function filterCategory(category) {
+            // Hide all sections
+            document.querySelectorAll('.category-section').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.category-tab').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(category).classList.add('active');
+
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+
+            // Close all FAQs when switching category
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+</html>
